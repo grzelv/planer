@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Planer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 AI Planer Dnia</h1>
+        <form id="plan-form">
+            <label for="tasks">Zadania (oddzielone przecinkami):</label>
+            <input type="text" id="tasks" placeholder="np. nauka programowania, zakupy, trening" required>
+
+            <label for="priority">Priorytet:</label>
+            <input type="text" id="priority" placeholder="np. nauka Reacta">
+
+            <label for="time">Dostępny czas (np. cały dzień, 5h):</label>
+            <input type="text" id="time" placeholder="np. cały dzień, 5h" required>
+
+            <button type="submit">Wygeneruj plan</button>
+        </form>
+
+        <div id="output" class="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <div id="loader" class="loader" style="display: none;">⏳ Czekaj, plan się generuje...</div>
+
+</body>
+</html>
